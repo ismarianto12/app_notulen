@@ -18,7 +18,7 @@ class Login extends CI_Controller
 
 public function index()
 {
- $x['judul'] = 'Data : Login';
+ $x['judul'] = 'Hak akses dan login';
  $this->template->load('template','login/login_list',$x);
 } 
 
@@ -40,7 +40,7 @@ public function detail($id)
       'email' => $row->email,
       'foto' => $row->foto,
       'log' => $row->log, 
-      'judul'=>'Detail :  LOGIN',
+      'judul'=>'Detail hak akses',
   );
     $this->template->load('template','login/login_read', $data);
 } else {
